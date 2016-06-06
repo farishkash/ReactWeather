@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\nvar React = __webpack_require__(1);\nvar ReactDOM = __webpack_require__(158);\n\nvar _require = __webpack_require__(159);\n\nvar Route = _require.Route;\nvar Router = _require.Router;\nvar IndexRoute = _require.IndexRoute;\nvar hashHistory = _require.hashHistory;\n\nvar Main = __webpack_require__(216);\nvar Weather = __webpack_require__(218);\nvar About = __webpack_require__(241);\nvar Examples = __webpack_require__(242);\n\nReactDOM.render(React.createElement(\n  Router,\n  { history: hashHistory },\n  React.createElement(\n    Route,\n    { path: '/', component: Main },\n    React.createElement(Route, { path: 'about', component: About }),\n    React.createElement(Route, { path: 'examples', component: Examples }),\n    React.createElement(IndexRoute, { component: Weather })\n  )\n), document.getElementById('app'));\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/app.jsx\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/app.jsx?");
+	eval("'use strict';\n\nvar React = __webpack_require__(1);\nvar ReactDOM = __webpack_require__(158);\n\nvar _require = __webpack_require__(159);\n\nvar Route = _require.Route;\nvar Router = _require.Router;\nvar IndexRoute = _require.IndexRoute;\nvar hashHistory = _require.hashHistory;\n\nvar Main = __webpack_require__(216);\nvar Weather = __webpack_require__(218);\nvar About = __webpack_require__(!(function webpackMissingModule() { var e = new Error(\"Cannot find module \\\"About\\\"\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));\nvar Examples = __webpack_require__(!(function webpackMissingModule() { var e = new Error(\"Cannot find module \\\"Examples\\\"\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));\n\nReactDOM.render(React.createElement(\n  Router,\n  { history: hashHistory },\n  React.createElement(\n    Route,\n    { path: '/', component: Main },\n    React.createElement(Route, { path: 'about', component: About }),\n    React.createElement(Route, { path: 'examples', component: Examples }),\n    React.createElement(IndexRoute, { component: Weather })\n  )\n), document.getElementById('app'));\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/app.jsx\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/app.jsx?");
 
 /***/ },
 /* 1 */
@@ -1485,18 +1485,6 @@
 /***/ function(module, exports) {
 
 	eval("'use strict';\n\n/**\n * Syntactic sugar for invoking a function and expanding an array for arguments.\n *\n * Common use case would be to use `Function.prototype.apply`.\n *\n *  ```js\n *  function f(x, y, z) {}\n *  var args = [1, 2, 3];\n *  f.apply(null, args);\n *  ```\n *\n * With `spread` this example can be re-written.\n *\n *  ```js\n *  spread(function(x, y, z) {})([1, 2, 3]);\n *  ```\n *\n * @param {Function} callback\n * @returns {Function}\n */\nmodule.exports = function spread(callback) {\n  return function wrap(arr) {\n    return callback.apply(null, arr);\n  };\n};\n\n\n/*****************\n ** WEBPACK FOOTER\n ** ./~/axios/lib/helpers/spread.js\n ** module id = 240\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./~/axios/lib/helpers/spread.js?");
-
-/***/ },
-/* 241 */
-/***/ function(module, exports, __webpack_require__) {
-
-	eval("'use strict';\n\nvar React = __webpack_require__(1);\n// var About = React.createClass({\n//   render: function(){\n//     return(\n//       <h3> About Component</h3>\n//     );\n//   }\n// });\n\nvar About = function About(props) {\n  return React.createElement(\n    'h3',\n    null,\n    ' About Component'\n  );\n};\n\nmodule.exports = About;\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/components/About.jsx\n ** module id = 241\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/components/About.jsx?");
-
-/***/ },
-/* 242 */
-/***/ function(module, exports, __webpack_require__) {
-
-	eval("'use strict';\n\nvar React = __webpack_require__(1);\n\nvar Examples = function Examples(props) {\n  return React.createElement(\n    'h3',\n    null,\n    ' Examples'\n  );\n};\n\nmodule.exports = Examples;\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/components/Examples.jsx\n ** module id = 242\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/components/Examples.jsx?");
 
 /***/ }
 /******/ ]);
