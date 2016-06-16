@@ -1580,7 +1580,7 @@
 /* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("exports = module.exports = __webpack_require__(253)();\n// imports\n\n\n// module\nexports.push([module.id, \".page-title {\\n  color: purple;\\n  margin-top: 2.5rem;\\n  margin-bottom: 2.5rem; }\\n\\ninput [type=search] {\\n  box-shadow: none; }\\n\", \"\"]);\n\n// exports\n\n\n/*****************\n ** WEBPACK FOOTER\n ** ./~/css-loader!./~/sass-loader!./app/styles/app.scss\n ** module id = 256\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/styles/app.scss?./~/css-loader!./~/sass-loader");
+	eval("exports = module.exports = __webpack_require__(253)();\n// imports\n\n\n// module\nexports.push([module.id, \".page-title {\\n  color: #555;\\n  margin-top: 2.5rem;\\n  margin-bottom: 2.5rem; }\\n\\ninput [type=search] {\\n  box-shadow: none; }\\n\", \"\"]);\n\n// exports\n\n\n/*****************\n ** WEBPACK FOOTER\n ** ./~/css-loader!./~/sass-loader!./app/styles/app.scss\n ** module id = 256\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/styles/app.scss?./~/css-loader!./~/sass-loader");
 
 /***/ }
 /******/ ]);
